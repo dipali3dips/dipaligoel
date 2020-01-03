@@ -198,3 +198,6 @@ main h2 a{
 	font-family: medium-content-title-font, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
+main {
+    margin: 2em 0.8em;
+}
