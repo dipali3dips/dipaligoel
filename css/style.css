@@ -130,7 +130,7 @@ body {
 }
 
 /* Main column */
-.main {   
+.blog-side {   
   -ms-flex: 70%; /* IE10 */
   flex: 70%;
   background-color: white;
@@ -176,4 +176,18 @@ pre {
 code{
   background: none;
   text-align: left;
+}
+
+main h2 {
+    font-size: 170%;
+    font-weight: 400;
+    margin: 0em 0em 0.5em 0em;
+    letter-spacing: -0.02em;
+}
+
+main h2 a{
+    font-size: 105%%;
+    font-weight: 400;
+    margin: 0em 0em 0.5em 0em;
+    letter-spacing: -0.02em;
 }
