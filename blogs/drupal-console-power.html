@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Drupal Console Power D8</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas="">
+  <div class="is-fixed">
+    <nav id="navbar" class="navbar dark-header">
+      <div id="navbar-menu" class="navbar-menu">
+        <nav role="navigation" aria-labelledby="block-agarica-main-menu-menu" id="block-agarica-main-menu" class="navbar-end">
+          <a href="https://dipaligoel.com/" class="navbar-item" >Drupal Blogs</a>
+        </nav>
+     </div>
+    </nav>
+  </div>
+  
+  <article>
+    <section class="hero hero-blog" data-headerbg="light">
+      <div class="hero-body">
+        <div class="container">
+          <div class="titlebar">
+            <div class="titlebar_title">
+              <h1 class="title is-2 p-name">Drupal Console Power D8</h1>
+            </div>
+          </div>
+          <p class="byline is-mono">Written by 
+          <strong>Dipali</strong>  </p>
+          <p class="byline is-mono">Posted on <time class="dt-published" datetime=""><span>2020 Jan 10</span>
+          </time></p>
+      </div>
+    </div>
+  </section>
+  
+  
+  <div class="e-content">
+    <div class="section-article" data-headerbg="light">
+      <div class="container">
+        <div class="flow content">
+          <div class="flow_middle">
+		  <h2>What is the Drupal Console?</h2>
+		    <p>Drupal Console is a new Command Line Interface (CLI) for Drupal, built specifically for Drupal 8 (based on the Symfony Console component). 
+			In many ways, the Drupal Console is similar to Drush. You can use it to rebuild caches, connect to databases and install modules. 
+			The Drupal Console is a suite of tools that you run on a command line interface (CLI) to generate boilerplate code and interact with a Drupal 8 installation. 
+			This saves you a lot of time - giving you more time to focus on the business logic of your module. </p>
+            <p> </p>
+            <p>For installation please refer <a href="https://www.drupal.org/project/console">here.</a> or you can follow the steps </p>
+<pre class="  language-php"><code class="shell  language-php">composer <span class="token keyword">require</span> drupal<span class="token operator">/</span>console<span class="token punctuation">:</span><span class="token operator">~</span><span class="token number">1.0</span> \
+--prefer<span class="token operator">-</span>dist \
+--optimize<span class="token operator">-</span>autoloader \
+--sort<span class="token operator">-</span>packages \
+--no<span class="token operator">-</span>update
+composer update
+</code></pre>
+			<br>Once you have done with installation type <strong><em>drupal</em></strong> in terminal and you’ll get below list</p>
+            <img src="../drupal-console-1.jpg" />
+			
+			<p> To get all commands and option for console type <strong><em>drupal list</em></strong> & you will get list of options and available commands. </p>
+			<img src="../drupal-console-2.jpg" />
+			
+			<p>I will show you how can we create boilerplate code “<strong>Generating Custom Module</strong>”<br>To create custom form we first need to have custom module</p>
+			
+			<p>We will create module called <strong>example </strong></p>
+			
+			<p> All we need is to run <strong><em>generate:module</em> </strong> command first. </p>
+            <pre><code class=""> $ drupal generate:module </code></pre>	
+            <img src="../drupal-console-3.jpg" />
+           <p>You should then see the example folder in your site under /modules/custom </p>
+            <br />
+            <p>Next Blog will have the how we can add <b> Controller </b> , <b> forms</b> in this module </p>
+            <br />			
+          			
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>	
+  </article>
+</div>
+
+</body>
+</html>

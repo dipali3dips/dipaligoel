@@ -499,3 +499,6 @@ pre {
     margin: .5em 0;
     overflow: auto;
 }
+
+.flow_middle img {
+  width :100%;
