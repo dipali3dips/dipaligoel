@@ -8,39 +8,54 @@
 </head>
 <body>
 
-<div id="header" class="fixed"><h1 class="h-card">Dipali Goel</h1>
-  <nav class="menu">
-    <a href="https://dipaligoel.com">Home</a>
-    <!-- <a href="/photos">Photos</a>
-    <a href="/subscribe">Subscribe</a>
-    <a href="/about">About</a> -->
-  </nav>
-</div>
-
-<main>
-<div class="row">
-  <div class="blog-side">
-    <h2 id="stepstoaddfieldinadminformdrupal8"><a>Steps to add field in admin form Drupal 8</a></h2>
-
-    <p>Creating an admin form is often used. An admin interface enables you to make a module's settings configurable by editor or administrator
-       so new fields can be added or existing fields can be changed.
-       Here we are going to add new field called 'siteapikey'</p>
-
-    <p>Module Set Up </p>
-
-    <ul>
-      <li>Create a folder in /modules called custom</li>
-      <li>Inside create folder for your custom Module lets called as add<em>siteapi</em>key </li>
-      <li>Create necessary files add<em>siteapi</em>key.info.yml, add<em>siteapi</em>key.services.yml, add<em>siteapi</em>key.install</li>
-      <li>Add Form in add<em>siteapi</em>key\src\Form\AddFieldToSiteInformationForm</li>
-     <li>Add RouteSubscriber in add<em>siteapi</em>key\src\Routing\RouteSubscriber</li>
-    </ul>
-
-<p>Code </p>
-
-<p>add<em>siteapi</em>key.info.yml</p>
-
-<pre><code>name: 'Add Site API Key to Site Configuration'
+<div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas="">
+  <div class="is-fixed">
+    <nav id="navbar" class="navbar dark-header">
+      <div id="navbar-menu" class="navbar-menu">
+        <nav role="navigation" aria-labelledby="block-agarica-main-menu-menu" id="block-agarica-main-menu" class="navbar-end">
+          <a href="https://dipaligoel.com/" class="navbar-item" >Drupal Blogs</a>
+        </nav>
+     </div>
+    </nav>
+  </div>
+  
+  <article>
+    <section class="hero hero-blog" data-headerbg="light">
+      <div class="hero-body">
+        <div class="container">
+          <div class="titlebar">
+            <div class="titlebar_title">
+              <h1 class="title is-2 p-name">Steps to add field in admin form Drupal 8</h1>
+            </div>
+          </div>
+          <p class="byline is-mono">Written by 
+          <strong>Dipali</strong>  </p>
+          <p class="byline is-mono">Posted on <time class="dt-published" datetime=""><span>2020 Jan 03</span>
+          </time></p>
+      </div>
+    </div>
+  </section>
+  
+  
+  <div class="e-content">
+    <div class="section-article" data-headerbg="light">
+      <div class="container">
+        <div class="flow content">
+          <div class="flow_middle">
+		    <p>Creating an admin form is often used. An admin interface enables you to make a module's settings configurable by editor or administrator
+               so new fields can be added or existing fields can be changed.
+               Here we are going to add new field called 'siteapikey'</p>
+            <p>Module Set Up </p>
+            <ul>
+              <li>Create a folder in /modules called custom</li>
+              <li>Inside create folder for your custom Module lets called as add<em>siteapi</em>key </li>
+              <li>Create necessary files add<em>siteapi</em>key.info.yml, add<em>siteapi</em>key.services.yml, add<em>siteapi</em>key.install</li>
+              <li>Add Form in add<em>siteapi</em>key\src\Form\AddFieldToSiteInformationForm</li>
+              <li>Add RouteSubscriber in add<em>siteapi</em>key\src\Routing\RouteSubscriber</li>
+            </ul>
+            <p>Code </p>
+            <p>add<em>siteapi</em>key.info.yml</p>
+			<pre><code>name: 'Add Site API Key to Site Configuration'
 type: module
 description: 'Add new field called site api key to site configurtaion form'
 core: 8.x
@@ -139,13 +154,14 @@ class RouteSubscriber extends RouteSubscriberBase {
 
 }
 </code></pre>
-  </div>
-</div>
 
-</main>
-
-<div class="footer">
-  <h2>Drupal Developer</h2>
+              
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>	
+  </article>
 </div>
 
 </body>
